@@ -3,6 +3,13 @@ public class PersegiPanjang {
     public int panjang;
     public int lebar;
 
+     // Konstruktor dengan dua parameter untuk inisialisasi panjang dan lebar
+     public PersegiPanjang(int p, int l)
+    {
+    panjang = p;
+    lebar = l;
+    }
+
     public void cetakInfo() 
     {
         System.out.println("Panjang: " + panjang + ", Lebar: " + lebar);
@@ -42,8 +49,7 @@ public class PersegiPanjang {
         System.out.println("Panjang persegi panjang ke-5: " + myArrayOfPersegiPanjang[5].panjang);
 
         // Cetak informasi tentang persegi panjang yang dimasukkan pengguna
-        for (int i = 0; i < 3; i++) 
-        {
+        for (int i = 0; i < 3; i++) {
             System.out.print("Persegi panjang ke-" + (i + 1) + ": ");
             arrayOfPersegiPanjang[i].cetakInfo();
         }
